@@ -63,36 +63,32 @@ html, body {
   background: url(images/Background_camera.jpg)
     center center fixed no-repeat;
     background-size: cover;	
+    font-family: "helvetica", sans-serif;
 }
 
 .center {
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
 	padding: 2%;
     margin: 100px auto;
- 	background: rgba(150, 150, 150, 0.75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
-	border: 4px dashed white;
+	border-radius: 30px 150px;
+    background: rgba(150, 150, 150, 0.75); /*this uses opacity of 75% for the background color*/
 }  
 #logo {
-    margin-bottom: 16px;
-	border: 3px dashed white;
+    margin-bottom: 50px;
+	margin-top: 40px;
 	text-align: center;
 }
 
 h1 {
-    <p style = "font-family:helvetica;">
-Write your text here
-</p>
 	font-family: helvetica, serif;
 	font-size: 2em;
     margin: 0px auto 10px auto;
     color: #fff;
-}
-
+    padding-bottom: 10px;
+} 
 h2 {
-    <p style = "font-family:helvetica;">
-Write your text here
-</p>
 	font-family: helvetica, serif;
 	font-size: 1.5em;
     line-height: 1.4;
@@ -101,45 +97,14 @@ Write your text here
     margin: 0px auto 25px auto;
 }
 p {
-    <p style = "font-family:helvetica;">
-Write your text here
-</p>
 	font-family: helvetica, serif;
 	font-size: 1.2em;
     line-height: 1.6;
     color: #fff;
+    padding-bottom: 10px;
 }
-nav{
-    font-family: helvetica;
-    font-size: 1.2em;
-    width: 400px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 2em;
-    }    
-nav li{
-    display: inline;
-    }
-nav a{
-    display: inline-block;
-    padding: 10px;
-    }
-a{
-    color:#444;
-    text-decoration: none;
-    font-weight: bold;
-    }
-a:hover{
-    color:black;
-    background:pink;
-    }
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-nav {
-  max-width: 960px;
-  mask-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 25%, #ffffff 75%, rgba(255, 255, 255, 0) 100%);
-  margin: 0 auto;
-  padding: 60px 0;
-}
 nav ul {
   text-align: center;
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
