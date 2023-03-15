@@ -1,0 +1,208 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+
+div.home-container { 
+	background: url(espresso.jpeg) center center fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 100vh;
+}
+
+div.container { 
+	position: relative;
+	min-height: 100vh;
+}
+
+/* >>> IMPORTANT: you have to change the wrap the content of your home page (index) in a div with a class home-container to make it work. If you used a div with the class container on your home, you’ll only need to change the name of the class.  */
+
+
+main { 
+	padding: 2rem 1.5rem 5rem;
+	width: auto;
+	/* background-color: rgb(255, 255, 255); */
+	}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+}
+
+header {
+	display: grid;
+	grid-template-columns: auto auto;
+	background: rgb(197, 196, 196);
+	padding: 1.5rem 1rem;
+	}
+
+h1 {
+	width: 8em;
+	}
+
+h2, h3, h4 {
+		font-family: "citrus-gothic", sans-serif;
+		font-weight: 400;
+		font-style: normal;
+	}
+
+h2 {
+	font-size: 2.5rem;
+	color: rgb(20,119,165);
+	}
+	
+h3 {
+	font-size: 1.75rem;
+	margin: 1rem 0rem;
+}
+
+
+a {
+	text-decoration: none;
+	}
+
+nav ul  {
+	text-align: right;
+	margin: 1.5rem 1rem 1rem 1rem;
+	}
+	
+ul li 	{
+	list-style-type: none;
+	padding: .5rem 0rem;
+	font-family: sans-serif;
+}
+
+figure {
+	margin-bottom: 1.5rem;
+}
+
+main.menu ul {
+		margin: 0rem;
+}	
+
+main.menu ul li {
+		margin: 0rem;
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-template-rows: auto auto;
+}	
+
+p {
+	margin: .5rem 0rem 1.25rem;
+	font-family: "georgiapro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+	
+p.description {
+	grid-column: 1;
+	margin-bottom: 1.5rem;
+	font-family: "georgiapro", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+	
+p.price {
+	grid-row: 1;
+	grid-column: 2;
+	color: rgb(2, 61, 88);
+	text-align: right;
+	margin: 0rem;
+	}
+	
+nav ul li {
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin-bottom: .5rem;
+	padding: .5rem;
+	}
+	
+nav ul li a {
+	color: rgb(235, 235, 235);
+	background-color: rgb(20,119,165);
+	padding: .5rem;
+	font-family: "citrus-gothic", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	}
+	
+
+p.slogan {
+	font-size: 3rem;
+	font-family: "georgiapro", sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	margin: 3rem 0rem 4rem;
+	color: rgb(255, 255, 255);	
+	}
+	
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1rem;
+  background: rgb(197, 196, 196);
+}
+
+address {
+	color: rgb(253, 253, 253); 
+	font-family: "georgiapro", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	margin: 0rem 0rem 1rem;
+	}
+footer p {
+	margin: 0;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+nav ul li.selected a{
+	color: rgb(246, 244, 241);
+	background-color: rgb(2, 61, 88);
+}
+
+article {
+	background-color: rgb(197, 196, 196);
+	padding: .25rem;
+}
+
+@media screen and (min-width: 60em) {
+	body{
+		background-color: rgb(50, 50, 50);
+		max-width: 70rem;
+		margin: auto;
+	}
+	main.menu ul{
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 0em 6em;
+	}
+
+	div.container{
+		background-color: rgb(255, 255, 255);
+	}
+
+}
+
+@media screen and (min-width: 45em){
+	nav ul li{
+		display: inline;
+		margin:.25rem;
+		font-size: 1.35rem;
+		padding: .5rem;
+	}
+
+	nav{
+		margin: 6rem 2rem 3rem 4rem;
+	}
+
+	article{
+		margin: 2rem 10rem;
+		padding: .25rem;
+	}
+}
