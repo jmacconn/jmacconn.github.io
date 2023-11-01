@@ -1,0 +1,55 @@
+/*CSS document*/
+
+body {
+
+}
+
+header {
+    color: rgb(153, 154, 158);
+}
+
+div.container {
+    max-width: 25em;
+    margin: auto;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p { font-family: "panel-sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+h1,h2,h3 { font-family: "modula", sans-serif;
+    color:#ba0400 ;
+}
+
+a{
+    text-decoration: none;
+    color: black; 
+}
+
+nav ul li {
+	text-transform: uppercase;
+	font-weight: bolder;
+	margin-bottom: .30rem;
+	}
+	
+nav ul li a {
+	color: #3d8db1;
+	font-family: "citrus-gothic", sans-serif;
+	font-weight: bold;
+	font-style: normal;
+    font-size: .75rem;
+	}
