@@ -1,17 +1,26 @@
 /*CSS document*/
 
 body {
-
+    background-color: #bbb;
 }
 
 header {
-    color: rgb(153, 154, 158);
+    background-color: #ffffff;
 }
 
 div.container {
-    max-width: 25em;
     margin: auto;
+    background-color: #fafafa;
+    padding: 1em;
 }
+
+div.container nav{
+    text-align: center;
+}
+
+/*main{}*/
+
+/*aside{}*/
 
 figure {
     margin: 0;
@@ -31,6 +40,10 @@ p { font-family: "panel-sans", sans-serif;
     font-weight: 400;
 }
 
+h1{padding-top: 1em;
+    align-content: center;
+    width: 18em;}
+
 h1,h2,h3 { font-family: "modula", sans-serif;
     color:#ba0400 ;
 }
@@ -44,6 +57,8 @@ nav ul li {
 	text-transform: uppercase;
 	font-weight: bolder;
 	margin-bottom: .30rem;
+    display: inline;
+    margin-right: 1em;
 	}
 	
 nav ul li a {
@@ -51,5 +66,75 @@ nav ul li a {
 	font-family: "citrus-gothic", sans-serif;
 	font-weight: bold;
 	font-style: normal;
-    font-size: .75rem;
+    font-size: 1rem;
 	}
+
+    section.tertiary{ 
+        border-top: 3px solid #3d8db1;
+    }
+
+    @media screen and (min-width: 60em) {
+        div.container {max-width: 100em;}
+
+        section{ max-width: 50em;
+        margin: 0,auto;}
+        
+        header {
+            background-color: #ffffff;
+            grid-column: 1 / 3;
+        }
+        
+        div.container {
+            margin: auto;
+            background-color: #fafafa;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-gap:0 1em;
+            padding: 1em;
+        }
+
+        main{
+            display:grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 0 1em;
+        }
+
+        section.mainstory{ 
+            grid-column: 2 / 4;
+            grid-row: 1 / 3 ;
+            display: flex;
+            flex-direction: column;  
+        }
+
+        section.mainstory a{
+            flex: 1 0 10em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        section.mainstory a figure{
+            flex: 1 0 10em;
+        }
+
+        section.mainstory a figure img{
+            height: 95%;
+            object-fit: cover;
+        }
+
+        section.mainstory a h3{
+            flex: 0 0 auto;
+            margin: 0;
+        }
+        section.mainstory a p{
+            flex: 0 0 auto;
+        }
+
+        nav ul li a {
+            color: #3d8db1;
+            font-family: "citrus-gothic", sans-serif;
+            font-weight: bold;
+            font-style: normal;
+            font-size: 1.5rem;
+            }
+        
+    }
